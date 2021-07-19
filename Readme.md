@@ -2,7 +2,7 @@
 
 * Студент: [Юлия Хоменко](https://up.htmlacademy.ru/adaptive/23/user/1794239).
 * Наставник: `Сергей Артёмов`.
-
+  Ссылочка: https://htmlacademy.ru/profile/firefoxic
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
