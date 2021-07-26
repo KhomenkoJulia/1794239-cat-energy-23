@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial.woff2") format("woff2"), url("../fonts/Arial.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald.woff2") format("woff2"), url("../fonts/Oswald.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
