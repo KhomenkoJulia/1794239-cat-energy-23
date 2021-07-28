@@ -1,0 +1,145 @@
+:root {
+  --green: #68b738;
+  --special_green: #5eaa2f;
+  --white: #ffffff;
+  --line_grey: #d9d9d9;
+  --light_grey: #f2f2f2;
+  --grey: #ebebeb;
+  --dark_grey: #cdcdcd;
+  --special_grey: #eaeaea;
+  --dark: #666666;
+  --light-black: #444444;
+  --black: #222222;
+  --dark-black: #111111;
+  --super_black: #000000;
+  --rose: #ff8282;
+}
+
+@font-face {
+  font-family: "Arial";
+  src:
+    url("../../fonts/Arial.woff2") format("woff2"),
+    url("../../fonts/Arial.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../../fonts/Oswald.woff2") format("woff2"),
+    url("../../fonts/Oswald.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../../fonts/oswaldmedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: "Arial", "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--light-black);
+  background-color: var(--white);
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content min-content;
+  align-content: start;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  transform: scale(0);
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  background: var(--green);
+  color: var(--white);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weight-back {
+  background-color: var(--light_grey);
+  padding: 21px 33px 18px 20px;
+}
+
+.weight-title {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: var(--super_black);
+}
+
+.link {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--super_black);
+}
+
+.link::after {
+  content: "";
+  background: url(../../img/icon_arrow.svg) no-repeat;
+  display: flex;
+  width: 32px;
+  height: 10px;
+  margin-left: 17px;
+}
+
+.weight-text::after {
+  content: "";
+  background: var(--line_grey);
+  display: flex;
+  width: 240px;
+  height: 1px;
+  margin: 23px auto 15px;
+}
+
+.important-title {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--super_black);
+}

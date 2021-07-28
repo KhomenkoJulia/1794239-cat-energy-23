@@ -1,0 +1,39 @@
+.example {
+  background-color: var(--special_grey);
+}
+
+.example__title {
+
+}
+
+.example__text {
+
+}
+
+.example__properties {
+  text-align: center;
+  font-weight: 400;
+}
+
+.example__properties dd {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--super_black);
+}
+
+.example__properties dt {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__expenses {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--super_black);
+  display: flex;
+}

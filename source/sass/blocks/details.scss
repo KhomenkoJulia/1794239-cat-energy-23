@@ -1,0 +1,61 @@
+.details {
+  padding: 27px auto 42px;
+}
+
+.details__title {
+
+}
+
+.details__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.details__item {
+
+}
+
+.details__item:first-child::before {
+  content: "";
+  background-color: var(--green);
+  background-image: url(../../img/icon_leaf.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+}
+
+.details__item:nth-child(2)::before {
+  content: "";
+  background-color: var(--green);
+  background-image: url(../../img/icon_tub.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+}
+
+.details__item:nth-child(3)::before {
+  content: "";
+  background-color: var(--green);
+  background-image: url(../../img/icon_eat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+}
+
+.details__item:last-child::before {
+  content: "";
+  background-color: var(--green);
+  background-image: url(../../img/icon_alarm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+}

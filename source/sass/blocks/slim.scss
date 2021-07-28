@@ -1,0 +1,21 @@
+.slim {
+  padding-bottom: 20px;
+}
+
+
+.slim__title {
+
+}
+
+.slim__title::before {
+  content: "";
+  background: url(../../img/cat_back.png) no-repeat;
+  display: flex;
+  width: 50px;
+  height: 53px;
+  margin: 20px;
+}
+
+.slim__text {
+
+}

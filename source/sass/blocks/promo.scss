@@ -1,0 +1,43 @@
+.promo {
+  box-sizing: border-box;
+  height: 563px;
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--white);
+}
+
+.promo__top {
+  background-color: var(--green);
+  background-image: url("../../img/index-background.jpg"), url("../../img/index-can-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 27px;
+  padding-bottom: 120px;
+}
+
+.promo__bottom {
+  height: 322px;
+  margin: -104px auto 8px;
+  padding-top: 302px;
+  background: url("../../img/index-can-mobile.png") no-repeat top;
+}
+
+.promo__title {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+.promo__text {
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+
+  line-height: 18px;
+}
