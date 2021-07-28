@@ -1,24 +1,20 @@
-.contacts {
-
-}
-
 .contacts__wrap {
   display: flex;
-}
-
-.contacts__title {
-
+  padding-top: 28px;
+  padding-bottom: 26px;
 }
 
 .contacts__text {
   line-height: 20px;
+  margin: 0;
 }
 
-.contacts__img {
+.contacts__title {
   font-family: "Oswald", "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: var(--dark-black);
+  margin: 0;
 }

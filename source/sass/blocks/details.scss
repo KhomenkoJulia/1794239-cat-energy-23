@@ -1,9 +1,11 @@
 .details {
-  padding: 27px auto 42px;
+  padding-top: 7px;
+  padding-bottom: 42px;
 }
 
 .details__title {
-
+  margin-top: 0;
+  margin-bottom: 38px;
 }
 
 .details__list {
@@ -13,49 +15,36 @@
 }
 
 .details__item {
+  display: flex;
+  margin-bottom: 20px;
+}
 
+.details__item::before {
+  content: "";
+  background-color: var(--green);
+  background-repeat: no-repeat;
+  flex: 1 0 auto;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
 }
 
 .details__item:first-child::before {
   content: "";
-  background-color: var(--green);
-  background-image: url(../../img/icon_leaf.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  width: 60px;
-  height: 60px;
+  background-image: url("../../img/details1.png");
 }
 
 .details__item:nth-child(2)::before {
   content: "";
-  background-color: var(--green);
-  background-image: url(../../img/icon_tub.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  width: 60px;
-  height: 60px;
+  background-image: url("../../img/details2.png");
 }
 
 .details__item:nth-child(3)::before {
   content: "";
-  background-color: var(--green);
-  background-image: url(../../img/icon_eat.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  width: 60px;
-  height: 60px;
+  background-image: url("../../img/details3.png");
 }
 
 .details__item:last-child::before {
   content: "";
-  background-color: var(--green);
-  background-image: url(../../img/icon_alarm.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  width: 60px;
-  height: 60px;
+  background-image: url("../../img/details4.png");
 }
