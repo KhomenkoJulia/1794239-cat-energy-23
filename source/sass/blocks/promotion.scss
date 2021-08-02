@@ -1,0 +1,20 @@
+.promotion {
+  background: url("../../img/icon_gift.svg") no-repeat center 20%, var(--green) url("../../img/gift-photo-mobile1.jpg") no-repeat center;
+  background-size: 78px 80px, contain;
+  min-height: 276px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.promotion__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 43px;
+}

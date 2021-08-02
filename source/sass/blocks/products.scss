@@ -1,0 +1,129 @@
+.products {
+  padding-top: 27px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.products__caption {
+  display: flex;
+  width: 100%;
+  padding-bottom: 41px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.products__title {
+  line-height: 36px;
+  --page-indent: 8vw;
+  --scrollbar-size: calc(100vw - 100%);
+  margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
+}
+
+
+.products__tbody {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 60px;
+}
+
+.products__product-card {
+  font-size: 12px;
+  line-height: 16px;
+  display: grid;
+  grid-template-areas:
+    "i i n n"
+    "i i m m "
+    "i i t t"
+    "i i p p"
+    "b b b b";
+  width: 280px;
+  margin-bottom: 19px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+}
+
+.products__buy::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 62px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey);
+}
+
+.products__name {
+  grid-area: n;
+  width: 100px;
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--black);
+  margin-bottom: 18px;
+}
+
+.products__mass {
+  grid-area: m;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__mass::before {
+  content: "Вес";
+}
+
+.products__price {
+  grid-area: p;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.products__price::before {
+  content: "Цена";
+}
+
+.products__taste {
+  grid-area: t;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__taste::before {
+  content: "Вкус";
+}
+
+.products__buy {
+  grid-area: b;
+  display: flex;
+}
+
+.products__img {
+  order: -1;
+  grid-area: i;
+}
+
+.products__all {
+  padding-bottom: 25px;
+}
+
+.products__another {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--dark-black);
+}
+
+.products__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.products__all-link {
+  background-color: var(--light_grey);
+  color: var(--light-black);
+}

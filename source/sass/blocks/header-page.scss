@@ -1,9 +1,10 @@
 .header-page {
   padding-top: 11px;
   padding-bottom: 17px;
+  border-bottom: 1px solid var(--line_grey);
 }
 
-.header-page__container {
+.header-page__page__leveler {
   display: flex;
   justify-content: space-between;
   position: relative;

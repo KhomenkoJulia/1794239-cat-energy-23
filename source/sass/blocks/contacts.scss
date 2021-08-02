@@ -1,5 +1,10 @@
+.contacts--catalog {
+  background: var(--light_grey);
+}
+
 .contacts__wrap {
   display: flex;
+  justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 26px;
 }
@@ -7,6 +12,7 @@
 .contacts__text {
   line-height: 20px;
   margin: 0;
+  max-width: 159px;
 }
 
 .contacts__title {
@@ -17,4 +23,16 @@
   text-transform: uppercase;
   color: var(--dark-black);
   margin: 0;
+  max-width: 171px;
+}
+
+.contacts__img {
+  display: flex;
+  justify-content: center;
+  min-height: 362px;
+}
+
+.contacts__img img {
+  width: 100%;
+  object-fit: cover;
 }
