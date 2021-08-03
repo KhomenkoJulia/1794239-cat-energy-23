@@ -4,27 +4,7 @@
 }
 
 .other-products__title {
-  font-family: "Oswald", "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: left;
   white-space: nowrap;
-  color: var(--super_black);
-  --page-indent: 8vw;
-  --scrollbar-size: calc(100vw - 100%);
-  margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
-  margin-right: 0;
-  display: flex;
-  align-items: center;
-}
-
-.other-products__title::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  margin-left: 22px;
-  background-color: var(--green);
 }
 
 .other-products__cards {

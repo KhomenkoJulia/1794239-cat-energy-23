@@ -1,0 +1,28 @@
+
+.contact-info {
+  padding-top: 26px;
+}
+
+.contact-info__title {
+  line-height: 26px;
+  text-transform: none;
+  margin-bottom: 37px;
+}
+
+.contact-info__line {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.contact-info__input {
+  margin-left: 10px;
+  height: 45px;
+}
+
+.contact-info__comment {
+  resize: none;
+  padding: 10px 12px 15px;
+}

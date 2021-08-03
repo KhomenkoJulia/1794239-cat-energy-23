@@ -1,0 +1,22 @@
+.intent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey);
+}
+
+.intent__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 22px 0 19px;
+}
+
+.intent__item {
+  margin-bottom: 13px;
+}
+
+.intent__item:last-child {
+  margin-bottom: 0;
+}

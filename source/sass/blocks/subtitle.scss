@@ -1,0 +1,23 @@
+.subtitle {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: var(--super_black);
+  --page-indent: 20px;
+  --scrollbar-size: calc(100vw - 100%);
+  margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-left: 22px;
+  background-color: var(--green);
+  position: relative;
+}

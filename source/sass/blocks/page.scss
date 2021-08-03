@@ -24,7 +24,7 @@
 }
 
 .page__leveler {
-  --page-indent: 8vw;
+  --page-indent: 20px;
   --scrollbar-size: calc(100vw - 100%);
   margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
   box-sizing: border-box;

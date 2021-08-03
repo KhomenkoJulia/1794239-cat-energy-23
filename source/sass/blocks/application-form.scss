@@ -1,0 +1,59 @@
+.application-form {
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--light-black);
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.application-form__title {
+  margin-bottom: 37px;
+  text-transform: none;
+}
+
+.application-form__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--super_black);
+  margin-bottom: 39px;
+}
+
+.application-form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.application-form__fieldset {
+  padding-bottom: 24px;
+}
+
+.application-form__fieldset::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey);
+}
+
+.application-form__line {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.application-form__input {
+  margin-left: 13px;
+  height: 45px;
+}
+
+.application-form__button {
+  margin: 21px auto;
+}
+
+.application-form__text {
+  text-align: center;
+}
