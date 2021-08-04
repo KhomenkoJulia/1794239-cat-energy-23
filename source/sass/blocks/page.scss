@@ -34,7 +34,6 @@
   margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
   box-sizing: border-box;
   padding: 0;
-  outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
     --page-indent: 30px;
