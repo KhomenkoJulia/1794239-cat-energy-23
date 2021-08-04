@@ -13,6 +13,16 @@
   line-height: 20px;
   margin: 0;
   max-width: 159px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    line-height: 40px;
+  }
 }
 
 .contacts__title {

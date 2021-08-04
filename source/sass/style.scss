@@ -1,9 +1,9 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/viewports.scss";
 @import "global/defaults.scss";
 @import "blocks/button.scss";
 @import "blocks/important-title.scss";
-@import "blocks/subtitle.scss";
 @import "blocks/input.scss";
 @import "blocks/page.scss";
 @import "blocks/header-page.scss";
@@ -24,3 +24,4 @@
 @import "blocks/intent.scss";
 @import "blocks/contact-info.scss";
 @import "blocks/optional.scss";
+@import "blocks/subtitle.scss";

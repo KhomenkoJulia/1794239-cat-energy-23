@@ -13,10 +13,23 @@
   margin-bottom: 25px;
 }
 
+.example__parameters {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example__properties {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    justify-content: start;
+    gap: 42px;
+  }
 }
 
 .example__property {
@@ -62,4 +75,10 @@
   text-transform: uppercase;
   color: var(--super_black);
   margin: 0 auto 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: end;
+    width: 174px;
+  }
 }

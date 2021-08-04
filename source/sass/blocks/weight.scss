@@ -6,6 +6,10 @@
   background-color: var(--light_grey);
   padding: 21px 33px 18px 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+  }
 }
 
 .weight__title {
@@ -16,6 +20,11 @@
   text-transform: uppercase;
   color: var(--super_black);
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .weight__title--slim::before {
@@ -25,6 +34,10 @@
   width: 50px;
   height: 53px;
   margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .weight__title--pro::before {
@@ -34,6 +47,10 @@
   width: 67px;
   height: 50px;
   margin-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .weight__link {
@@ -53,6 +70,13 @@
   margin-left: 17px;
 }
 
+.weight__text {
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    color: var(--super_black);
+  }
+}
+
 .weight__text::after {
   content: "";
   background: var(--line_grey);
@@ -60,4 +84,8 @@
   width: 240px;
   height: 1px;
   margin: 23px auto 15px;
+
+  @media (min-width: $tablet-width) {
+    background: inherit;
+  }
 }

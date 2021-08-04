@@ -12,18 +12,31 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 326px;
+    column-gap: 59px;
+    row-gap: 90px;
+  }
 }
 
 .details__item {
   display: flex;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    row-gap: 31px;
+    padding-right: 77px;
+  }
 }
 
 .details__item::before {
   content: "";
   background-color: var(--green);
   background-repeat: no-repeat;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   width: 60px;
   height: 60px;
   margin-right: 20px;

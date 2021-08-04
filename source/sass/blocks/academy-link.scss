@@ -3,7 +3,11 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 22px 20px;
   border-top: 1px solid var(--line_grey);
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    column-gap: 22px;
+  }
 }

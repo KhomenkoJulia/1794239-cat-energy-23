@@ -39,6 +39,17 @@
   background-color: var(--grey);
 }
 
+.application-form__head {
+  line-height: 26px;
+  text-transform: none;
+  margin-bottom: 37px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 69px;
+  }
+}
+
 .application-form__line {
   display: flex;
   white-space: nowrap;
