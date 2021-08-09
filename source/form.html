@@ -43,39 +43,42 @@
         <h1 class="application-form__title important-title">Подбор программы</h1>
         <p class="application-form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       </header>
-      <form class="application-form__fieldsets" action="#" method="post">
-        <fieldset class="application-form__fieldset page__leveler">
-          <p class="application-form__line">
-            <label for="name-input">Имя:*</label>
-            <input class="application-form__input input" id="name-input" type="text" name="name" placeholder="Барсик" required autofocus>
-          </p>
-          <p class="application-form__line">
-            <label for="weight-input">Вес (кг):*</label>
-            <input class="application-form__input input" id="weight-input" type="number" name="weight" placeholder="7" required>
-          </p>
-          <p class="application-form__line">
-            <label for="age">Возраст (лет):</label>
-            <input class="application-form__input input" id="age" type="number" name="age" placeholder="7">
-          </p>
-        </fieldset>
 
-        <fieldset class="intent page__leveler">
-          <legend class="page__visually-hidden">Желаемый результат</legend>
-          <ul class="intent__list">
-            <li class="intent__item">
-              <input id="slim" class="intent__radio" type="radio" name="intent" value="slim" checked>
-              <label for="slim">Похудение</label>
-            </li>
-            <li class="intent__item">
-              <input id="pro" class="intent__radio" type="radio" name="intent" value="pro">
-              <label for="pro">Набор массы</label>
-            </li>
-            <li class="intent__item">
-              <input id="not-know" class="intent__radio" type="radio" name="intent" value="do-not-know">
-              <label for="not-know">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+      <form class="application-form__fieldsets" action="#" method="post">
+        <div class="application-form__wrapper">
+          <fieldset class="application-form__fieldset page__leveler">
+            <p class="application-form__line">
+              <label for="name-input">Имя:*</label>
+              <input class="application-form__input input" id="name-input" type="text" name="name" placeholder="Барсик" required autofocus>
+            </p>
+            <p class="application-form__line">
+              <label for="weight-input">Вес (кг):*</label>
+              <input class="application-form__input input" id="weight-input" type="number" name="weight" placeholder="7" required>
+            </p>
+            <p class="application-form__line">
+              <label for="age">Возраст (лет):</label>
+              <input class="application-form__input input" id="age" type="number" name="age" placeholder="7">
+            </p>
+          </fieldset>
+
+          <fieldset class="intent page__leveler">
+            <legend class="page__visually-hidden">Желаемый результат</legend>
+            <ul class="intent__list">
+              <li class="intent__item">
+                <input id="slim" class="intent__radio" type="radio" name="intent" value="slim" checked>
+                <label for="slim">Похудение</label>
+              </li>
+              <li class="intent__item">
+                <input id="pro" class="intent__radio" type="radio" name="intent" value="pro">
+                <label for="pro">Набор массы</label>
+              </li>
+              <li class="intent__item">
+                <input id="not-know" class="intent__radio" type="radio" name="intent" value="do-not-know">
+                <label for="not-know">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <h2 class="application-form__head subtitle">Контактные&nbsp;данные (владельца кота)</h2>
         <fieldset class="contact-info page__leveler">
           <p class="contact-info__line">

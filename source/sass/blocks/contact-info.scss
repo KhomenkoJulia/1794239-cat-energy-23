@@ -1,6 +1,10 @@
 
 .contact-info {
   padding-top: 26px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .contact-info__line {
@@ -9,6 +13,10 @@
   white-space: nowrap;
   margin: 0;
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
 }
 
 .contact-info__input {

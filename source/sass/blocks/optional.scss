@@ -9,6 +9,11 @@
     flex-wrap: wrap;
     column-gap: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    column-gap: 104px;
+  }
 }
 
 .optional__item {

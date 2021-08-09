@@ -3,6 +3,11 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    column-gap: 80px;
+    padding-top: 82px;
+    --page-indent: 110px;
+    --scrollbar-size: calc(100vw - 100%);
+    margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
   }
 }
 
@@ -17,6 +22,28 @@
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
+    margin: 0;
+    padding: 41px 51px 55px;
+  }
+}
+
+.weight__line--slim {
+  @media (min-width: $tablet-width) {
+    background: var(--light_grey) url("../../img/cat_back.png") no-repeat center right;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: var(--light_grey);
+  }
+}
+
+.weight__line--pro {
+  @media (min-width: $tablet-width) {
+    background: var(--light_grey) url("../../img/cat_back1.png") no-repeat center right;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: var(--light_grey);
   }
 }
 
@@ -38,6 +65,7 @@
 .weight__title--slim::before {
   content: "";
   background: url("../../img/cat_back.png") no-repeat;
+  background-size: contain;
   display: flex;
   width: 50px;
   height: 53px;
@@ -46,11 +74,22 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background: url("../../img/cat_back.png") no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 100px;
+    height: 106px;
+    margin-right: 62px;
+  }
 }
 
 .weight__title--pro::before {
   content: "";
   background: url("../../img/cat_back1.png") no-repeat;
+  background-size: contain;
   display: flex;
   width: 67px;
   height: 50px;
@@ -58,6 +97,16 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background: url("../../img/cat_back1.png") no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 134px;
+    height: 100px;
+    margin-right: 47px;
   }
 }
 

@@ -1,5 +1,115 @@
+.slider {
+  background-color: var(--special_grey);
+  padding-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .slider__list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 44px 0 25px;
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 232px;
+}
+
+.slider__item {
+  position: absolute;
+  width: 320px;
+  height: 232px;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+}
+
+.slider__toggles::before {
+  content: "Было";
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--super_black);
+  margin-inline: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: underline var(--super_black) dashed;
+    text-underline-offset: 10px;
+  }
+}
+
+.slider__toggles::after {
+  content: "Стало";
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--super_black);
+  margin-inline: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: underline var(--super_black) dashed;
+    text-underline-offset: 10px;
+  }
+}
+
+.slider__scale {
+  display: flex;
+  align-items: center;
+  width: 84px;
+  height: 14px;
+  background: var(--white);
+  border: 1px solid var(--dark_grey);
+  border-radius: 6px;
+  margin: 0 auto;
+  padding: 4px 6px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    background: var(--dark_grey);
+    border: none;
+  }
+}
+
+.slider__bar {
+  width: 35px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 200px;
+    width: 8px;
+    height: 8px;
+    border: 13px solid var(--white);
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
 }

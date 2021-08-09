@@ -12,6 +12,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -33,7 +34,24 @@
   @media (min-width: $tablet-width) {
     display: grid;
     row-gap: 31px;
-    padding-left: 78px;
+    position: relative;
+    min-height: 280px;
+  }
+}
+
+.details__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    color: var(--light_grey);
+    display: flex;
+    font-family: "Oswald", "Ubuntu", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    right: 0;
   }
 }
 

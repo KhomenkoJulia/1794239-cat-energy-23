@@ -49,13 +49,13 @@
       <section class="weight">
         <h2 class="page__visually-hidden">Линейки продуктов</h2>
 
-        <section class="weight__line page__leveler">
+        <section class="weight__line weight__line--slim page__leveler">
           <h3 class="weight__title weight__title--slim">Похудение</h3>
           <p class="weight__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="weight__link" href="catalog.html">Каталог slim</a>
         </section>
 
-        <section class="weight__line page__leveler">
+        <section class="weight__line weight__line--pro page__leveler">
             <h3 class="weight__title weight__title--pro">Набор массы</h3>
             <p class="weight__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
             мышцы!</p>
@@ -94,20 +94,26 @@
             </p>
           </div>
           </div>
-          <div class="slider page__leveler">
+          <div class="slider">
             <ul class="slider__list">
-              <li class="slider__item">
-                <img class="slider__img" src="img/before-mobile1.png" alt="Cat before" width="251" height="240">
+              <li class="slider__item slider__item--before">
+                <img class="slider__img" src="img/before-mobile1.png" alt="Cat before" width="311" height="232">
               </li>
-              <li class="slider__item">
-                <img class="slider__img" src="img/after-mobile1.png" alt="Cat after" width="311" height="232">
+              <li class="slider__item slider__item--after">
+                <img class="slider__img" src="img/after-mobile1.png" alt="Cat after" width="251" height="240">
               </li>
             </ul>
-            <p class="slider__toggles">
-              <button class="slider__toggle" type="button" hidden>Было</button>
-              <button class="slider__toggle" type="button" hidden>Стало</button>
-            </p>
-        </div>
+
+              <div class="slider__toggles">
+                <button class="slider__button" type="button" hidden>Было</button>
+                <button class="slider__button" type="button" hidden>Стало</button>
+                <div class="slider__scale">
+                  <div class="slider__bar"></div>
+                  <div class="slider__toggle" tabindex="0">
+                  </div>
+                </div>
+              </div>
+
       </section>
     </main>
 
@@ -149,6 +155,6 @@
 
       </div>
     </footer>
-
+<script src="js/slider.js"></script>
   </body>
   </html>
