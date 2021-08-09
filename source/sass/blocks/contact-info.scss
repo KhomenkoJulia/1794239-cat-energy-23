@@ -14,7 +14,24 @@
 .contact-info__input {
   margin-left: 10px;
   height: 45px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
 }
+
+.contact-info__input--email::placeholder {
+  @media (min-width: $tablet-width) {
+    background: url("../../img/icon_email.svg") no-repeat center right;
+  }
+}
+
+.contact-info__input--tel::placeholder {
+  @media (min-width: $tablet-width) {
+    background: url("../../img/icon_tel.svg") no-repeat center right;
+  }
+}
+
 
 .contact-info__comment {
   resize: none;

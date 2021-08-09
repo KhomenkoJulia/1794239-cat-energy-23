@@ -11,7 +11,7 @@
 <body class="page__body">
 
 <header class="header-page">
-  <div class="header-page__page__leveler page__leveler">
+  <div class="header-page__wrapper page__leveler">
     <a class="logo" href="index.html">
       <img class="logo__img" src="img/logo-mobile.svg" alt="logo" width="33" height="38">
       <img class="logo__img-name" src="img/logo-2.svg" alt="Cat energy" width="101" height="18">
@@ -23,10 +23,10 @@
       </button>
       <ul class="nav-menu__list">
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="#">Главная</a>
+          <a class="nav-menu__link" href="index.html">Главная</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
+          <a class="nav-menu__link" href="#">Каталог продукции</a>
         </li>
         <li class="nav-menu__item">
           <a class="nav-menu__link" href="form.html">Подбор программы</a>
@@ -119,8 +119,8 @@
                   <td class="products__buy"><a class="products__button button" href="#">Заказать</a></td>
                 </tr>
 
-                <tr class="products__all">
-                  <td colspan="6">
+                <tr>
+                  <td  class="products__all" colspan="6">
                     <p class="products__another">Показать еще 100500 товаров</p>
                     <p class="products__text">На самом деле вкусов гораздо больше!</p>
                     <a class="products__all-link button" href="#">Показать все</a>
@@ -172,26 +172,27 @@
             </tr>
           </tbody>
         </table>
-      </section>
-
-      <section class="promotion page__leveler">
-        <div class="promotion__wrap">
-        <h3 class="promotion__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h3>
-        </div>
+              <div class="promotion page__leveler">
+                <div class="promotion__wrap">
+                  <h3 class="promotion__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h3>
+                </div>
+              </div>
       </section>
     </main>
 
       <section class="contacts contacts--catalog">
         <div class="contacts__wrap page__leveler">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h2 class="contacts__title">Приглашаем <br>к сотрудничеству<br> дилеров!</h2>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city"> Санкт-Петербург</span></p>
         </div>
         <div class="contacts__img"><img class="contacts__img" src="img/location.png" alt="Map" width="320" height="362"></div>
       </section>
 
     <footer class="footer-page">
       <div class="footer-page__info page__leveler">
-        <img class="footer-page__img-name" src="img/logo-2.svg" alt="Cat energy" width="128" height="24">
+        <a class="footer-page__logo" href="index.html">
+          <img class="footer-page__img-name" src="img/logo-2.svg" alt="Cat energy" width="128" height="24">
+        </a>
         <ul class="footer-page__social-list">
           <li class="footer-page__social-items">
             <a class="footer-page__social-link footer-page__vk" href="#">
@@ -210,9 +211,9 @@
           </li>
         </ul>
 
-        <a class="academy-link page__leveler" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="academy-link__academy-text" src="img/HTML-Academy.svg" alt="HTML Academy" width="114" height="18">
-          <img class="academy-link__academy-logo" src="img/logo_html1.svg" alt="HTML Academy logo" width="27" height="34">
+        <a class="footer-page__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="footer-page____academy-text" src="img/HTML-Academy.svg" alt="HTML Academy" width="114" height="18">
+          <img class="footer-page____academy-logo" src="img/logo_html1.svg" alt="HTML Academy logo" width="27" height="34">
         </a>
 
       </div>

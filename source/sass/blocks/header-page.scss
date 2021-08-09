@@ -2,6 +2,10 @@
   padding-top: 11px;
   padding-bottom: 17px;
   border-bottom: 1px solid var(--line_grey);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .header-page__wrapper {

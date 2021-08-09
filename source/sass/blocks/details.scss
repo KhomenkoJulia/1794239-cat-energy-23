@@ -19,6 +19,11 @@
     column-gap: 59px;
     row-gap: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 .details__item {
@@ -28,7 +33,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     row-gap: 31px;
-    padding-right: 77px;
+    padding-left: 78px;
   }
 }
 
@@ -40,6 +45,12 @@
   width: 60px;
   height: 60px;
   margin-right: 20px;
+}
+
+.details__item:first-child {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .details__item:first-child::before {

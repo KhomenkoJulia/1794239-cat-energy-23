@@ -1,5 +1,5 @@
 .promotion__wrap {
-  background: url("../../img/icon_gift.svg") no-repeat center 20%, var(--green) url("../../img/gift-photo-mobile1.jpg") no-repeat center;
+  background: url("../../img/icon_gift.svg") no-repeat center 20%, url("../../img/gift-photo-mobile1.jpg") no-repeat center;
   background-size: 78px 80px, contain;
   min-height: 276px;
   min-width: 280px;
@@ -8,6 +8,12 @@
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/icon_gift.svg") no-repeat 20% 50%, url("../../img/gift-photo-tablet.jpg") no-repeat center;
+    flex-direction: row;
+    padding-right: 124px;
+  }
 }
 
 .promotion__title {
@@ -17,4 +23,10 @@
   color: var(--white);
   text-align: center;
   margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 0;
+    margin-inline: 124px;
+  }
 }

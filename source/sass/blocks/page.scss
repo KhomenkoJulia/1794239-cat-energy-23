@@ -1,6 +1,5 @@
 .page {
   min-height: 100%;
-  display: grid;
 }
 
 .page__body {
@@ -37,6 +36,12 @@
 
   @media (min-width: $tablet-width) {
     --page-indent: 30px;
+    --scrollbar-size: calc(100vw - 100%);
+    margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
+  }
+
+  @media (min-width: $desktop-width) {
+    --page-indent: 110px;
     --scrollbar-size: calc(100vw - 100%);
     margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
   }

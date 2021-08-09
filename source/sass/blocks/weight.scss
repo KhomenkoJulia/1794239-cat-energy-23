@@ -1,5 +1,9 @@
 .weight {
   padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .weight__line {
@@ -9,6 +13,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 52px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
   }
 }
 
