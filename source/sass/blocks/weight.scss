@@ -5,15 +5,11 @@
 .weight__wrap {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: center;
     column-gap: 80px;
     padding-top: 82px;
-    width: calc(100% - 60px);
+    width: 1220px;
     margin-inline: auto;
-  }
-
-  @media (min-width: $desktop_m-width) {
-    max-width: 1600px;
-    margin-inline: 110px;
   }
 }
 
@@ -136,6 +132,10 @@
     width: 340px;
     color: var(--super_black);
     margin-bottom: 30px;
+  }
+
+  @media (min-width: 800px) {
+    width: 60%;
   }
 
   @media (min-width: $desktop-width) {

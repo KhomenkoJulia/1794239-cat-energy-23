@@ -35,13 +35,13 @@
     row-gap: 114px;
   }
 
+  @media (min-width: 800px) {
+    column-gap: 200px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 230px 246px 248px 250px;
     column-gap: 86px;
-  }
-
-  @media (min-width: $desktop_l-width) {
-    margin-inline: auto;
   }
 }
 

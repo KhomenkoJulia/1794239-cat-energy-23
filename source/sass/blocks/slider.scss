@@ -6,8 +6,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(var(--white) 230px, var(--special_grey) 230px);
     padding-bottom: 70px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {

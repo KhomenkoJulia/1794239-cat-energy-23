@@ -3,7 +3,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: var(--light-black);
+  color: var(--light_black);
   background-color: var(--white);
   margin: 0;
   padding: 0;
@@ -21,20 +21,16 @@
 }
 
 .page__leveler {
-  margin-inline: auto;
-  width: calc(100% - 20px);
+  margin-inline: 20px;
   box-sizing: border-box;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 60px);
+    margin-inline: 30px;
   }
 
-  @media (min-width: $desktop_m-width) {
-    width: calc(100% - 220px);
-  }
-
-  @media (min-width: $desktop_l-width) {
-    width: calc(100% - 220px);
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-inline: auto;
   }
 }

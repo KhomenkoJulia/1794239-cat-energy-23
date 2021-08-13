@@ -17,7 +17,7 @@
 .products__title {
   line-height: 36px;
   margin-inline: auto;
-  width: calc(100% - 40px);
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     --page-indent: 30px;
@@ -177,7 +177,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: var(--dark-black);
+  color: var(--dark_black);
   margin: 0;
   margin-bottom: 8px;
   display: flex;
@@ -220,7 +220,7 @@
 
 .products__all-link {
   background-color: var(--light_grey);
-  color: var(--light-black);
+  color: var(--light_black);
 
   @media (min-width: $desktop-width) {
     width: 168px;
