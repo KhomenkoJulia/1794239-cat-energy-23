@@ -1,11 +1,16 @@
 .logo {
   display: flex;
-}
-
-.logo__img {
-  margin-right: 56px;
+  min-width: 190px;
+  height: 40px;
+  background: url("../../img/logo-mobile.svg") no-repeat left, url("../../img/logo-2.svg") no-repeat right;
 
   @media (min-width: $tablet-width) {
-    margin-right: 19px;
+    background: url("../../img/logo-tablet.png") no-repeat;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/logo-desktop.png") no-repeat;
+    min-height: 60px;
   }
 }

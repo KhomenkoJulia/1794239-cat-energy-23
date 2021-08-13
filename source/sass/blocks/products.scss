@@ -16,9 +16,8 @@
 
 .products__title {
   line-height: 36px;
-  --page-indent: 20px;
-  --scrollbar-size: calc(100vw - 100%);
-  margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
+  margin-inline: auto;
+  width: calc(100% - 40px);
 
   @media (min-width: $tablet-width) {
     --page-indent: 30px;
