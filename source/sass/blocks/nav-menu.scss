@@ -25,14 +25,60 @@
 }
 
 .nav-menu__toggle {
-  border: none;
+  display: flex;
+  align-items: flex-start;
   width: 40px;
   height: 40px;
-  background: url("../../img/menu-mobile.svg") no-repeat;
-  background-position: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.nav-menu--closed .nav-menu__toggle::before {
+  content: "";
+  margin-top: 8px;
+  width: 36px;
+  height: 2px;
+  background-color: var(--super_black);
+  box-shadow: 0 8px 0 0 var(--super_black), 0 16px 0 0 var(--super_black);
+}
+
+.nav-menu--closed .nav-menu__toggle:hover::before {
+  background-color: fade(var(--super_black), 30%);
+  box-shadow:
+    0 8px 0 0 fade(var(--super_black), 30%),
+    0 16px 0 0 fade(var(--super_black), 30%);
+}
+
+.nav-menu--opened .nav-menu__toggle {
+  &::before,
+  &::after {
+    content: "";
+    width: 36px;
+    height: 2px;
+    background-color: var(--super_black);
+    position: absolute;
+    top: 18px;
+    right: 0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(var(--super_black), 30%);
   }
 }
 
@@ -49,6 +95,8 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.5s ease-in-out;
+  box-shadow: 50px 0 0 0 var(--white),
+    -50px 0 0 0 var(--white);
 
   @media (min-width: $tablet-width) {
     opacity: 1;
@@ -60,10 +108,12 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 35px;
+    box-shadow: none;
   }
 }
 
-.nav-menu__toggle:hover ~ .nav-menu__list,
+.nav-menu--opened ~ .nav-menu__list,
+.nav-menu__toggle:active ~ .nav-menu__list,
 .nav-menu__toggle:focus-within ~ .nav-menu__list {
   opacity: 1;
   visibility: visible;
