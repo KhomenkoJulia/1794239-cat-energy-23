@@ -9,12 +9,11 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    align-items: center;
-    --air-gap: 20px;
-    position: relative;
+    --air-gap: 34px;
     width: fit-content;
     font-size: 36px;
     line-height: 36px;
+    position: relative;
   }
 }
 
@@ -23,7 +22,8 @@
   background-color: var(--green);
   height: 2px;
   width: 100%;
-  margin-left: 20px;
+  margin-left: 22px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     content: "";

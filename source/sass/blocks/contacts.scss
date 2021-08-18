@@ -3,6 +3,7 @@
     position: relative;
     max-width: 1220px;
     margin-inline: auto;
+    padding-top: 80px;
   }
 }
 
@@ -17,7 +18,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 44px 40px 40px;
+    padding: 60px 44px 40px 40px;
   }
 
   @media (min-width: $desktop-width) {
