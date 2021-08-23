@@ -88,21 +88,13 @@
 }
 
 .footer-page__academy-link {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   padding-top: 22px;
+  margin-inline: auto;
   border-top: 1px solid var(--line_grey);
 
   @media (min-width: $tablet-width) {
-    width: 163px;
-    column-gap: 22px;
     border: none;
+    margin-inline: 0;
     padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 176px;
-    justify-content: flex-start;
   }
 }

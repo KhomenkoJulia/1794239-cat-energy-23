@@ -15,6 +15,10 @@
   }
 }
 
+.other-products__table {
+  width: 100%;
+}
+
 .other-products__title {
   white-space: nowrap;
   margin-top: 24px;
@@ -63,8 +67,8 @@
     padding: 26px 38px 27px;
     font-size: 16px;
     line-height: 20px;
-    min-width: 710px;
     justify-content: space-between;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

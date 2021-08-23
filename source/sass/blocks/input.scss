@@ -1,9 +1,13 @@
 .input {
   border: none;
   outline: 1px solid var(--outline_grey);
-  padding: 14px;
+  padding: 18px 12px 10px;
   box-sizing: border-box;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 18px 10px;
+  }
 }
 
 .input::placeholder {

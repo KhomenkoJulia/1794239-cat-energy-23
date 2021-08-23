@@ -6,26 +6,28 @@
   height: 1px;
   background-color: var(--grey);
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .intent__list {
   list-style-type: none;
-  margin: 0;
-  padding: 22px 0 19px;
+  margin-top: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    outline: 1px solid var(--outline_grey);
+    padding: 30px 249px 6px 28px;
+  }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     outline: 1px solid var(--outline_grey);
-    padding: 25px 249px 25px 28px;
+    padding: 30px 249px 6px 28px;
   }
 }
 
 .intent__item {
-  margin-bottom: 13px;
-}
-
-.intent__item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }

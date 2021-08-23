@@ -5,25 +5,28 @@
 }
 
 .promotion__wrap {
-  background: url("../../img/icon_gift.svg") no-repeat center 28%, url("../../img/gift-photo-mobile1.jpg") no-repeat center;
+  background: url("../../img/icon_gift.svg") no-repeat center 28%, url("../../img/gift-photo-mobile1.jpg") no-repeat center, var(--green);
   background-size: 78px 80px, contain;
   min-height: 290px;
-  min-width: 280px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   margin-top: 32px;
   margin-bottom: 35px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     background: url("../../img/icon_gift.svg") no-repeat 13% 50%, url("../../img/gift-photo-tablet.jpg") no-repeat center;
+    background-size: 80px 83px, 100% auto;
+    height: 200px;
     flex-direction: row;
     margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../img/icon_gift.svg") no-repeat 40% 27%, url("../../img/gift-photo-desk.jpg") no-repeat 0 0;
+    background: url("../../img/icon_gift.svg") no-repeat 40% 27%, url("../../img/gift-photo-desk.jpg") no-repeat 0 0, var(--green);
     background-size: 78px 80px, 245px 289px;
     box-sizing: border-box;
     flex-direction: column;

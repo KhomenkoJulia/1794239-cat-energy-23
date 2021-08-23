@@ -1,13 +1,14 @@
 .optional__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 3px 0 0;
   color: var(--super_black);
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     column-gap: 57px;
+    row-gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,10 +18,10 @@
 }
 
 .optional__item {
-  margin-bottom: 13px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    width: 355px;
-    margin-bottom: 32px;
+    width: 40%;
+    margin: 0;
   }
 }

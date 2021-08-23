@@ -1,14 +1,17 @@
+.contacts {
+  background: var(--light_grey);
+}
+
+.contacts--index {
+  background: var(--white);
+}
+
 .contacts__desktop-wrap {
   @media (min-width: $desktop-width) {
     position: relative;
     max-width: 1220px;
     margin-inline: auto;
-    padding-top: 80px;
   }
-}
-
-.contacts--catalog {
-  background: var(--light_grey);
 }
 
 .contacts__wrap {
@@ -18,7 +21,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 44px 40px 40px;
+    padding: 64px 44px 40px 40px;
   }
 
   @media (min-width: $desktop-width) {
