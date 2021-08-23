@@ -54,7 +54,6 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 80px;
-    width: 1220px;
     margin-inline: auto;
   }
 }
@@ -70,7 +69,7 @@
     "i i t t"
     "i i p p"
     "b b b b";
-  min-width: 280px;
+  width: 280px;
   box-sizing: border-box;
   margin-bottom: 19px;
   padding-top: 10px;
@@ -87,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 30px 40px 35px;
+    padding: 0;
     width: 245px;
     margin-bottom: 4px;
   }
@@ -124,7 +123,7 @@
     width: 150px;
     align-self: flex-start;
     text-align: center;
-    margin: 72px 16px 18px;
+    margin: 0 16px 18px;
   }
 }
 
@@ -135,7 +134,7 @@
   margin-left: -46px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-inline: 36px;
     padding-top: 10px;
     grid-area: initial;
     border-bottom: 1px solid var(--dark_grey);
@@ -153,7 +152,7 @@
   margin-left: -46px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-inline: 36px;
     padding-top: 10px;
     grid-area: initial;
     border-bottom: 1px solid var(--dark_grey);
@@ -172,7 +171,7 @@
   margin-left: -46px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-inline: 36px;
     padding-top: 10px;
     grid-area: initial;
     border-bottom: 1px solid var(--dark_grey);
@@ -186,7 +185,6 @@
 .products__img {
   order: -1;
   grid-area: i;
-  width: 100%;
 
   @media (min-width: $tablet-width) {
     grid-area: initial;
@@ -194,12 +192,12 @@
 }
 
 .products__image {
-  width: 100%;
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 200;
+    margin-inline: auto;
   }
 
   @media (min-width: $desktop-width) {
