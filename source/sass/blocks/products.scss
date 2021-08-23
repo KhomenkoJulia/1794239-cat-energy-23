@@ -186,13 +186,20 @@
 .products__img {
   order: -1;
   grid-area: i;
-  width: 140px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     grid-area: initial;
+  }
+}
+
+.products__image {
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
     width: 168px;
-    height: 200px;
-    margin-inline: auto;
+    height: 200;
   }
 
   @media (min-width: $desktop-width) {
