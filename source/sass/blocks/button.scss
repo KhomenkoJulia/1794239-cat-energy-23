@@ -12,6 +12,14 @@
   align-items: center;
   justify-content: center;
 
+  &:hover {
+    background: var(--special_green);
+  }
+
+  &:active {
+    color: var(--white_opacity);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;

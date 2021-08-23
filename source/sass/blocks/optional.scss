@@ -7,7 +7,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 57px;
+    column-gap: 90px;
     row-gap: 40px;
   }
 
@@ -18,10 +18,49 @@
 }
 
 .optional__item {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
+  position: relative;
+  display: flexbox;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 40%;
     margin: 0;
   }
+}
+
+.optional__checkbox + label {
+  margin-left: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 56px;
+  }
+}
+
+.optional__checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--dark_grey);
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -6px;
+    left: -2px;
+  }
+}
+
+.optional__checkbox:checked + label::after,
+.optional__checkbox:focus-visible + label::after {
+  content: "";
+  position: absolute;
+  background: url("../../img/check.svg") no-repeat center;
+  width: 18px;
+  height: 14px;
+  left: 8px;
+  top: 6px;
 }

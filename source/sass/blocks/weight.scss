@@ -186,3 +186,15 @@
     margin-left: 22px;
   }
 }
+
+.weight__link:hover::after {
+  content: "";
+  background: url("../../img/icon_arrow2.svg") no-repeat;
+  width: 32px;
+  height: 10px;
+  margin-left: 17px;
+}
+
+.weight__link:active {
+  opacity: 0.3;
+}
