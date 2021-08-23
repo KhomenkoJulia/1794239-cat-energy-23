@@ -190,8 +190,14 @@
 
   @media (min-width: $tablet-width) {
     grid-area: initial;
-    width: auto;
+    width: 168px;
+    height: 200px;
     margin-inline: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
   }
 }
 

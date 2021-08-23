@@ -13,7 +13,7 @@
 
 .intent__list {
   list-style-type: none;
-  margin-top: 46px;
+  margin-top: 44px;
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
@@ -30,4 +30,35 @@
 
 .intent__item {
   margin-bottom: 24px;
+  position: relative;
+  display: flexbox;
+  cursor: pointer;
+}
+
+.intent__radio + label {
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+.intent__radio + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--dark_grey);
+}
+
+.intent__radio:checked + label::after,
+.intent__radio:focus-visible + label::after {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 9px;
+  width: 13.5px;
+  height: 13.5px;
+  background: var(--green);
+  border-radius: 50%;
 }
