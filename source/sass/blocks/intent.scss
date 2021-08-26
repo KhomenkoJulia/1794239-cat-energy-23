@@ -62,6 +62,11 @@
   }
 }
 
+.intent__radio:hover + label::before {
+  cursor: pointer;
+  border: 1px solid var(--super_grey);
+}
+
 .intent__radio:checked + label::after,
 .intent__radio:focus-visible + label::after {
   content: "";

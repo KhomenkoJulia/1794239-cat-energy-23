@@ -321,3 +321,11 @@
     width: 168px;
   }
 }
+
+.products__all-link:hover {
+  background-color: var(--grey);
+}
+
+.products__all-link:active {
+  opacity: 0.6;
+}

@@ -23,3 +23,15 @@
     line-height: 30px;
   }
 }
+
+.input:hover {
+  outline: 1px solid var(--dark_grey);
+}
+
+.input:focus {
+  outline: 1px solid var(--light_black);
+}
+
+.input:focus:invalid {
+  outline: 1px solid var(--rose);
+}

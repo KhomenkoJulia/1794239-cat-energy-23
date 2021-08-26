@@ -130,7 +130,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: transparent;
+    background-color: var(--special_grey);
   }
 }
 

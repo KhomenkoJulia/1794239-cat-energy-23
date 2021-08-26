@@ -115,7 +115,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    text-decoration: underline var(--super_black) dashed;
+    text-decoration: underline var(--super_black) dotted;
     text-underline-offset: 4px;
   }
 }
@@ -132,9 +132,21 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    text-decoration: underline var(--super_black) dashed;
+    text-decoration: underline var(--super_black) dotted;
     text-underline-offset: 4px;
   }
+}
+
+.slider__toggles:hover::before,
+.slider__toggles:hover::after {
+  cursor: pointer;
+  text-decoration: underline var(--super_black) solid;
+}
+
+.slider__toggles:active::before,
+.slider__toggles:active::after {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .slider__scale {
@@ -179,7 +191,18 @@
     border: 13px solid var(--white);
     border-radius: 50%;
     background: var(--green);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 0 1px var(--dark_grey),
+      0 1px 3px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
+}
+
+.slider__toggle:hover {
+  box-shadow: 0 0 0 1px var(--dark_grey),
+    0 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+.slider__toggle:active {
+  box-shadow: 0 0 0 1px var(--green),
+    0 3px 5px rgba(0, 0, 0, 0.2);
 }
