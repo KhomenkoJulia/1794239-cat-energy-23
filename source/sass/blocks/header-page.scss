@@ -19,6 +19,20 @@
   position: relative;
 }
 
+.header-page__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 191px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
 .header-page__logo:hover {
   opacity: 0.8;
 }
@@ -27,17 +41,27 @@
   opacity: 0.6;
 }
 
-.header-page__img {
-  min-width: 190px;
+.header-page__image {
+  width: 33px;
   height: auto;
 
   @media (min-width: $tablet-width) {
-    min-width: 174px;
+    width: 60px;
     height: auto;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 202px;
+    width: 70px;
+    height: auto;
+  }
+}
+
+.header-page__logo-img {
+  width: 101px;
+  height: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
     height: auto;
   }
 }

@@ -24,6 +24,7 @@
 
 .contact-info__input {
   margin-left: 10px;
+  padding-right: 40px;
   height: 45px;
 
   @media (min-width: $tablet-width) {
@@ -36,18 +37,9 @@
   }
 }
 
-.contact-info__input--email::placeholder {
-  @media (min-width: $tablet-width) {
-    background: url("../../img/icon_email.svg") no-repeat center right;
-  }
+.contact-info__icon {
+  margin-left: -30px;
 }
-
-.contact-info__input--tel::placeholder {
-  @media (min-width: $tablet-width) {
-    background: url("../../img/icon_tel.svg") no-repeat center right;
-  }
-}
-
 
 .contact-info__comment {
   resize: none;

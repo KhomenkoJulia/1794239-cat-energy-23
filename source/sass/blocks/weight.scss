@@ -33,6 +33,11 @@
 
   @media (min-width: $tablet-width) {
     background: var(--light_grey) url("../../img/cat_back.png") no-repeat top 82px right 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat_back@2x.png") no-repeat;
+      background-size: 200px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +52,11 @@
   @media (min-width: $tablet-width) {
     background: var(--light_grey) url("../../img/cat_back1.png") no-repeat top 90px right 30px;
     padding-bottom: 54px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat_back1@2x.png") no-repeat;
+      background-size: 268px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -87,6 +97,11 @@
   height: 53px;
   margin: -9px 19px 10px 2px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat_back@2x.png") no-repeat;
+    background-size: 50px auto;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -100,6 +115,11 @@
     height: 106px;
     margin-top: -34px;
     margin-right: 62px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat_back@2x.png") no-repeat;
+      background-size: 100px auto;
+    }
   }
 }
 
@@ -111,6 +131,11 @@
   width: 67px;
   height: 50px;
   margin: -6px 10px 14px -8px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat_back1@2x.png") no-repeat;
+    background-size: 67px auto;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -124,6 +149,11 @@
     width: 134px;
     height: 100px;
     margin-right: 47px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat_back1@2x.png") no-repeat;
+      background-size: 134px auto;
+    }
   }
 }
 

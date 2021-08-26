@@ -52,9 +52,19 @@
   background: url("../../img/before-mobile1.png") no-repeat left;
   background-size: 311px 232px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/before-mobile1@2x.png") no-repeat left;
+    background-size: 311px auto;
+  }
+
   @media (min-width: $tablet-width) {
     background: url("../../img/cat-fat.png") no-repeat top 15px left 12px;
     background-size: auto 520px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/cat-fat@2x.png") no-repeat top 15px left 12px;
+      background-size: auto 520px;
+    }
   }
 }
 
@@ -62,9 +72,19 @@
   background: url("../../img/after-mobile1.png") no-repeat left;
   background-size: 251px 240px;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/after-mobile1@2x.png") no-repeat left;
+    background-size: 251px 240px;
+  }
+
   @media (min-width: $tablet-width) {
     background: url("../../img/cat-skinny.png") no-repeat top 14px right 58px;
     background-size: auto 525px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/cat-skinny@2x.png") no-repeat top 14px right 58px;
+      background-size: auto 525px;
+    }
   }
 }
 

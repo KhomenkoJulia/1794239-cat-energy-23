@@ -60,33 +60,6 @@
   height: 40px;
 }
 
-.footer-page__vk {
-  background: url("../../img/icon_vkontakte.svg") no-repeat center;
-  background-size: 23px auto;
-
-  @media (min-width: $tablet-width) {
-    background-size: 30px auto;
-  }
-}
-
-.footer-page__insta {
-  background: url("../../img/icon_instagram.svg") no-repeat center;
-  background-size: 16px auto;
-
-  @media (min-width: $tablet-width) {
-    background-size: 23px auto;
-  }
-}
-
-.footer-page__face {
-  background: url("../../img/icon_facebook.svg") no-repeat center;
-  background-size: 22px auto;
-
-  @media (min-width: $tablet-width) {
-    background-size: 28px auto;
-  }
-}
-
 .footer-page__academy-link {
   padding-top: 22px;
   margin-inline: auto;
