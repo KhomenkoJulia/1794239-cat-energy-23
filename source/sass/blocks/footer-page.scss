@@ -34,6 +34,14 @@
   @media (min-width: $desktop-width) {
     width: 140px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer-page__social-list {
@@ -58,16 +66,39 @@
   display: flex;
   width: 40px;
   height: 40px;
+  color: var(--dark);
+
+  &:hover {
+    color: var(--green);
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .footer-page__academy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 22px;
-  margin-inline: auto;
   border-top: 1px solid var(--line_grey);
+  width: 100%;
+  color: var(--dark);
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    text-align: right;
     border: none;
-    margin-inline: 0;
     padding: 0;
+    column-gap: 22px;
+  }
+
+  &:hover {
+    color: var(--green);
+  }
+
+  &:focus {
+    opacity: 0.6;
   }
 }

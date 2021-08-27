@@ -63,4 +63,17 @@
   height: 14px;
   left: 8px;
   top: 6px;
+
+  @media (min-width: $tablet-width) {
+    left: 10px;
+    top: 8px;
+  }
+}
+
+.optional__checkbox:hover + label::before {
+  border: 1px solid var(--super_grey);
+}
+
+.optional__checkbox:disabled + label {
+  opacity: 0.6;
 }

@@ -4,6 +4,12 @@
   padding: 18px 12px 10px;
   box-sizing: border-box;
   width: 100%;
+  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--light_black);
 
   @media (min-width: $tablet-width) {
     padding: 18px 18px 10px;
@@ -11,12 +17,8 @@
 }
 
 .input::placeholder {
-  font-family: "Oswald", "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--light_black);
+  font-family: inherit;
+  font-size: inherit;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -30,8 +32,18 @@
 
 .input:focus {
   outline: 1px solid var(--light_black);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .input:focus:invalid {
   outline: 1px solid var(--rose);
+}
+
+.input:focus:invalid ~ .contact-info__icon {
+  stroke: var(--rose);
+}
+
+.input:focus:valid ~ .contact-info__icon {
+  stroke: var(--green);
 }
