@@ -76,29 +76,14 @@
   background: url("../../img/location.png") no-repeat center;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../../img/location@2x.png") no-repeat center;
-    background-size: cover;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 400px;
     background: url("../../img/location-tab.png") no-repeat center;
     background-size: contain;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../../img/location-tab@2x.png") no-repeat center;
-      background-size: cover;
-    }
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../img/location-desk.png") no-repeat center;
     background-size: cover;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../../img/location-desk@2x.png") no-repeat center;
-      background-size: cover;
-    }
   }
 }

@@ -12,24 +12,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../img/index-background-desk.jpg") no-repeat 50vw top, linear-gradient(to right, transparent 50%, var(--header_green) 50%);
+    background: linear-gradient(to right, transparent 50%, var(--green_opacity) 50%), url("../../img/index-bg-desk.jpg") no-repeat 50vw top;
     padding-left: 80px;
     height: 691px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index-background-desk@2x.jpg") no-repeat;
+      background: linear-gradient(to right, transparent 50%, var(--green_opacity) 50%), url("../../img/index-bg-desk2.jpg") no-repeat 50vw top;
       background-size: auto 691px;
+      height: 691px;
     }
   }
 }
 
 .promo__top {
   padding-top: 27px;
-  background: var(--header_green) url("../../img/index-background.jpg") no-repeat center;
+  background: linear-gradient(to right, var(--green_opacity) 50%, var(--green_opacity) 50%), url("../../img/index-bg.jpg") no-repeat center;
   height: 275px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index-background@2x.jpg") no-repeat;
+    background: linear-gradient(to right, var(--green_opacity) 50%, var(--green_opacity) 50%), url("../../img/index-bg@2x.jpg") no-repeat center;
+    height: 275px;
     background-size: auto 275px;
   }
 
