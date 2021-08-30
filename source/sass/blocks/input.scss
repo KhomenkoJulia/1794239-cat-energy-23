@@ -16,16 +16,6 @@
   }
 }
 
-.input::placeholder {
-  font-family: inherit;
-  font-size: inherit;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
 .input:hover {
   outline: 1px solid var(--dark_grey);
 }
@@ -40,10 +30,10 @@
   outline: 1px solid var(--rose);
 }
 
-.input:focus:invalid ~ .contact-info__icon {
-  stroke: var(--rose);
+.input:focus:invalid + span {
+  background: var(--rose);
 }
 
-.input:focus:valid ~ .contact-info__icon {
-  stroke: var(--green);
+.input:focus:valid + span {
+  background: var(--green);
 }

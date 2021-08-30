@@ -41,6 +41,20 @@
   margin-left: -30px;
 }
 
+.contact-info__icon--mail {
+  mask: url("../../icons/sprite.svg#mail") no-repeat;
+  background: var(--black);
+  height: 14px;
+  width: 20px;
+}
+
+.contact-info__icon--tel {
+  mask: url("../../icons/sprite.svg#tel") no-repeat;
+  background: var(--black);
+  height: 20px;
+  width: 20px;
+}
+
 .contact-info__comment {
   resize: none;
   padding: 10px 14px 15px;

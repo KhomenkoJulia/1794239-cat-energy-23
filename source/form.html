@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="img/favicon/favicon_32.png" sizes="32x32" type="image/png">
+      <link rel="icon" href="img/favicon/favicon.svg" sizes="any" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
+      <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -92,16 +93,12 @@
           <p class="contact-info__line">
             <label for="mail-input">E-mail:*</label>
             <input class="contact-info__input input" id="mail-input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
-            <svg class="contact-info__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-              <use href="icons/sprite.svg#mail"></use>
-            </svg>
+            <span class="contact-info__icon contact-info__icon--mail"></span>
           </p>
           <p class="contact-info__line">
             <label for="phone-input">Телефон:*</label>
             <input class="contact-info__input input" id="phone-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            <svg class="contact-info__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-              <use href="icons/sprite.svg#tel"></use>
-            </svg>
+            <span class="contact-info__icon contact-info__icon--tel"></span>
           </p>
         </fieldset>
         <h3 class="application-form__head application-form__head--comment subtitle">Комментарий</h3>
