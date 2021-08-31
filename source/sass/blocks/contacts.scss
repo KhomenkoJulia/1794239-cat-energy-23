@@ -1,5 +1,7 @@
 .contacts {
   background: var(--light_grey);
+  position: relative;
+  z-index: 1;
 }
 
 .contacts--index {
