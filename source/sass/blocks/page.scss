@@ -1,4 +1,6 @@
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content min-content;
   font-family: "Arial", "Roboto", sans-serif;
   font-size: 14px;
   line-height: 18px;

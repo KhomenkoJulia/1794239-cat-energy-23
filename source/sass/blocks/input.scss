@@ -22,8 +22,6 @@
 
 .input:focus {
   outline: 1px solid var(--light_black);
-  font-family: inherit;
-  font-size: inherit;
 }
 
 .input:focus:invalid {
@@ -36,4 +34,9 @@
 
 .input:focus:valid + span {
   background: var(--green);
+}
+
+.input::placeholder {
+  font: inherit;
+  font-size: inherit;
 }

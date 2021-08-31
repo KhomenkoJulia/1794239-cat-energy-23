@@ -3,6 +3,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 60px;
+    z-index: 1;
   }
 }
 
