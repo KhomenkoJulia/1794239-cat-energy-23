@@ -58,7 +58,7 @@
 .optional__checkbox:focus-visible + label::after {
   content: "";
   position: absolute;
-  background: url("../../icons/check.svg") no-repeat center;
+  background: url("../../icons/sprite.svg#check") no-repeat center;
   width: 18px;
   height: 14px;
   left: 8px;

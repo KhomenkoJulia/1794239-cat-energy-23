@@ -207,7 +207,8 @@
 
 .weight__link::after {
   content: "";
-  background: url("../../icons/icon_arrow.svg") no-repeat;
+  background: url("../../icons/sprite.svg#arrow") no-repeat;
+  background-position: -8px;
   width: 32px;
   height: 10px;
   margin-left: 17px;
@@ -218,11 +219,7 @@
 }
 
 .weight__link:hover::after {
-  content: "";
-  background: url("../../icons/icon_arrow2.svg") no-repeat;
-  width: 32px;
-  height: 10px;
-  margin-left: 17px;
+  background-position: 0;
 }
 
 .weight__link:active {
