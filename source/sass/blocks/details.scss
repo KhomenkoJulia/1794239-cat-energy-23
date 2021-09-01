@@ -53,77 +53,52 @@
     display: grid;
     position: relative;
   }
-}
 
-.details__item::after {
-  @media (min-width: $tablet-width) {
-    counter-increment: myCounter;
-    content: counter(myCounter);
-    color: var(--light_grey);
-    display: flex;
-    font-family: "Oswald", "Ubuntu", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    position: absolute;
-    z-index: -1;
-    top: -40px;
-    right: 0;
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: var(--light_grey);
+      display: flex;
+      font-family: "Oswald", "Ubuntu", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      right: 0;
+    }
   }
-}
 
-.details__item::before {
-  content: "";
-  background-color: var(--green);
-  background-repeat: no-repeat;
-  background-position: center;
-  flex: 0 0 auto;
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
+  &::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: var(--details-icon) no-repeat center / 32px;
+    background-color: var(--green);
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 32px;
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 32px;
+    }
   }
-}
 
-.details__item:first-child::before {
-  content: "";
-  background-image: url("../../img/details1.png");
-
-  @media (min-resolution: 2dppx) {
-    background: url("../../img/details1@2x.png") no-repeat center;
-    background-size: cover;
+  &--icon_leaf {
+    --details-icon: url("../../icons/leaf.svg");
   }
-}
 
-.details__item:nth-child(2)::before {
-  content: "";
-  background-image: url("../../img/details2.png");
-
-  @media (min-resolution: 2dppx) {
-    background: url("../../img/details2@2x.png") no-repeat center;
-    background-size: cover;
+  &--icon_water {
+    --details-icon: url("../../icons/water.svg");
   }
-}
 
-.details__item:nth-child(3)::before {
-  content: "";
-  background-image: url("../../img/details3.png");
-
-  @media (min-resolution: 2dppx) {
-    background: url("../../img/details3@2x.png") no-repeat center;
-    background-size: cover;
+  &--icon_eat {
+    --details-icon: url("../../icons/eat.svg");
   }
-}
 
-.details__item:last-child::before {
-  content: "";
-  background-image: url("../../img/details4.png");
-
-  @media (min-resolution: 2dppx) {
-    background: url("../../img/details4@2x.png") no-repeat center;
-    background-size: cover;
+  &--icon_time {
+    --details-icon: url("../../icons/time.svg");
   }
 }

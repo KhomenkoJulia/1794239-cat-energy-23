@@ -149,8 +149,10 @@
 }
 
 .example__thumb {
+  all: unset;
   --thumb-size: 35px;
   box-sizing: border-box;
+  display: block;
   width: var(--thumb-size);
   height: 6px;
   border-radius: 6px;
