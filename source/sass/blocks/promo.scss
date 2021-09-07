@@ -12,12 +12,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, transparent 50%, var(--green_opacity) 50%), url("../../img/index-bg-desk.jpg") no-repeat 50vw top;
+    background: linear-gradient(to right, transparent 50.5%, var(--green_opacity) 50.5%), url("../../img/index-bg-desk.jpg") no-repeat 50vw top;
     padding-left: 80px;
     height: 691px;
 
     @media (min-resolution: 2dppx) {
-      background: linear-gradient(to right, transparent 50%, var(--green_opacity) 50%), url("../../img/index-bg-desk2.jpg") no-repeat 50vw top;
+      background: linear-gradient(to right, transparent 50.5%, var(--green_opacity) 50.5%), url("../../img/index-bg-desk2.jpg") no-repeat 50vw top;
       background-size: auto 691px;
       height: 691px;
     }
