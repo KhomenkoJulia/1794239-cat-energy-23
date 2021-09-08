@@ -87,18 +87,18 @@
   }
 
   &--icon_leaf {
-    --details-icon: url("../../icons/leaf.svg");
+    --details-icon: url("../../icons/sprite.svg#leaf");
   }
 
   &--icon_water {
-    --details-icon: url("../../icons/water.svg");
+    --details-icon: url("../../icons/sprite.svg#water");
   }
 
   &--icon_eat {
-    --details-icon: url("../../icons/eat.svg");
+    --details-icon: url("../../icons/sprite.svg#eat");
   }
 
   &--icon_time {
-    --details-icon: url("../../icons/time.svg");
+    --details-icon: url("../../icons/sprite.svg#time");
   }
 }
