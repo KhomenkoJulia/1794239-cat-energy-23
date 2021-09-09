@@ -5,6 +5,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: var(--super_black);
+  padding-top: 6px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -20,60 +21,21 @@
 
 .nav-menu__toggle {
   display: flex;
-  align-items: flex-start;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 26px;
   cursor: pointer;
-  background-color: transparent;
+  background: url("../../icons/sprite.svg#menu") no-repeat center;
   border: none;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.nav-menu--closed .nav-menu__toggle::before {
-  content: "";
-  margin-top: 8px;
-  width: 36px;
-  height: 2px;
-  background-color: var(--super_black);
-  box-shadow: 0 8px 0 0 var(--super_black), 0 16px 0 0 var(--super_black);
-}
-
-.nav-menu--closed .nav-menu__toggle:hover::before {
-  background-color: fade(var(--super_black), 30%);
-  box-shadow:
-    0 8px 0 0 fade(var(--super_black), 30%),
-    0 16px 0 0 fade(var(--super_black), 30%);
-}
-
-.nav-menu--opened .nav-menu__toggle {
-  &::before,
-  &::after {
-    content: "";
-    width: 36px;
-    height: 2px;
-    background-color: var(--super_black);
-    position: absolute;
-    top: 18px;
-    right: 0;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: fade(var(--super_black), 30%);
-  }
+.nav-menu--opened > .nav-menu__toggle {
+  width: 28px;
+  height: 28px;
+  background: url("../../icons/sprite.svg#closed") no-repeat center;
 }
 
 .nav-menu__list {
@@ -82,14 +44,15 @@
   padding: 0;
   width: 100%;
   position: absolute;
-  top: 56px;
+  top: 54px;
   left: 0;
   background-color: var(--white);
   border-bottom: 1px solid var(--line_menu);
   opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
   box-shadow: 50px 0 0 0 var(--white),
     -50px 0 0 0 var(--white);
-  visibility: hidden;
 
   @media (min-width: $tablet-width) {
     opacity: 1;
@@ -105,8 +68,7 @@
   }
 }
 
-.nav-menu--opened ~ .nav-menu__list,
-.nav-menu__toggle:active ~ .nav-menu__list,
+.nav-menu--opened > .nav-menu__list,
 .nav-menu__toggle:focus-within ~ .nav-menu__list {
   opacity: 1;
   visibility: visible;
@@ -122,16 +84,16 @@
   @media (min-width: $tablet-width) {
     border-top: none;
     padding-top: 20px;
+
+    &:active,
+    &--active {
+      text-decoration: underline var(--green) solid;
+      text-underline-offset: 10px;
+    }
   }
 
   &:hover {
     opacity: 0.6;
-  }
-
-  &:active,
-  &--active {
-    text-decoration: underline var(--green) solid;
-    text-underline-offset: 10px;
   }
 }
 
