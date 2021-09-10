@@ -27,7 +27,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 64px auto 76px 70px;
+    margin: 72px auto 76px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,13 +42,16 @@
   flex-wrap: wrap;
   border-top: 1px solid var(--grey);
   padding-top: 2px;
+  margin-inline: 16px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin-inline: 30px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 896px;
+    margin-inline: auto;
   }
 }
 

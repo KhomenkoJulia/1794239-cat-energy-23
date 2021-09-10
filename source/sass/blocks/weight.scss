@@ -1,7 +1,3 @@
-.weight {
-  padding-bottom: 20px;
-}
-
 .weight__wrap {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -15,10 +11,10 @@
 
 .weight__line {
   background-color: var(--light_grey);
-  padding: 20px 33px 20px 20px;
+  padding: 20px 33px 14px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 52px 56px;
+    padding: 70px 52px 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     background: var(--light_grey) url("../../img/cat_back.png") no-repeat top 82px right 64px;
+    margin-bottom: 30px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/cat_back@2x.png") no-repeat;
@@ -47,11 +44,8 @@
 }
 
 .weight__line--pro {
-  padding-bottom: 20px;
-
   @media (min-width: $tablet-width) {
     background: var(--light_grey) url("../../img/cat_back1.png") no-repeat top 90px right 30px;
-    padding-bottom: 54px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/cat_back1@2x.png") no-repeat;
@@ -130,7 +124,7 @@
   display: flex;
   width: 67px;
   height: 50px;
-  margin: -6px 10px 14px -8px;
+  margin: -6px 10px 10px -8px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/cat_back1@2x.png") no-repeat;
@@ -148,7 +142,7 @@
     display: flex;
     width: 134px;
     height: 100px;
-    margin-right: 47px;
+    margin: -28px 47px 10px -12px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/cat_back1@2x.png") no-repeat;
@@ -209,9 +203,10 @@
   content: "";
   background: url("../../icons/sprite.svg#arrow") no-repeat;
   background-position: -8px;
-  width: 32px;
-  height: 10px;
+  width: 40px;
+  height: 30px;
   margin-left: 17px;
+  margin-top: -7px;
 
   @media (min-width: $tablet-width) {
     margin-left: 22px;

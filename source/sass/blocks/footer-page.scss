@@ -19,15 +19,17 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: flex-start;
     padding-bottom: 61px;
   }
 }
 
 .footer-page__logo {
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 4px;
     width: 160px;
   }
 
@@ -47,15 +49,16 @@
 .footer-page__social-list {
   list-style-type: none;
   margin: 0 auto;
-  padding: 14px 0 10px;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
-  column-gap: 14px;
+  align-items: center;
+  column-gap: 30px;
   border-top: 1px solid var(--line_grey);
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    column-gap: 10px;
+    column-gap: 20px;
     border: none;
     padding: 0;
     width: auto;
@@ -64,9 +67,14 @@
 
 .footer-page__social-link {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: 22px;
   color: var(--dark);
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    margin-top: -6px;
+  }
 
   &:hover {
     color: var(--green);
@@ -77,6 +85,27 @@
   }
 }
 
+.footer-page__face {
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 43px;
+  }
+}
+
+.footer-page__vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+    margin-right: 4px;
+  }
+}
+
+.footer-page__insta {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
 
 .footer-page__academy-link {
   display: flex;

@@ -23,12 +23,14 @@
 }
 
 .page__leveler {
-  margin-inline: 18px;
-  box-sizing: border-box;
-  padding: 0;
+  --page-indent: 20px;
+  --scrollbar-size: calc(100vw - 100%);
+  margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
 
   @media (min-width: $tablet-width) {
-    margin-inline: 30px;
+    --page-indent: 30px;
+    --scrollbar-size: calc(100vw - 100%);
+    margin-inline: var(--page-indent) calc(var(--page-indent) - var(--scrollbar-size));
   }
 
   @media (min-width: $desktop-width) {

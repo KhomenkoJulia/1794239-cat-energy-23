@@ -1,8 +1,8 @@
-
 .contact-info {
   @media (min-width: $desktop-width) {
+    padding-top: 100px;
     display: flex;
-    column-gap: 60px;
+    column-gap: 90px;
     z-index: 1;
   }
 }
@@ -13,6 +13,7 @@
   white-space: nowrap;
   margin: 0;
   margin-bottom: 14px;
+  margin-right: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -24,7 +25,7 @@
 }
 
 .contact-info__input {
-  margin-left: 10px;
+  margin-left: 12px;
   padding-right: 40px;
   height: 45px;
 
@@ -39,26 +40,29 @@
 }
 
 .contact-info__icon {
-  margin-left: -30px;
+  position: relative;
+  margin-left: -40px;
 }
 
 .contact-info__icon--mail {
   mask: url("../../icons/sprite.svg#mail") no-repeat;
   background: var(--black);
-  height: 14px;
-  width: 20px;
+  height: 24px;
+  width: 26px;
 }
 
 .contact-info__icon--tel {
   mask: url("../../icons/sprite.svg#tel") no-repeat;
   background: var(--black);
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 26px;
+  margin-top: 8px;
 }
 
 .contact-info__comment {
   resize: none;
   padding: 10px 14px 15px;
+  height: 152px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 18px 15px;
@@ -66,6 +70,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 6px;
+    margin-bottom: 13px;
   }
 }

@@ -10,15 +10,15 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/favicon_32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="favicon/favicon.svg" sizes="any" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicon/favicon-apple.png">
+  <link rel="icon" href="favicon/favicon_32.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/favicon-apple_180.png" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
 
   <header class="header-page">
-    <div class="header-page__wrapper page__leveler">
+    <div class="page__leveler header-page__wrapper">
       <a class="header-page__logo" href="index.html">
         <picture>
           <source media="(min-width: 1280px)" srcset="img/logo.svg#desktop">
@@ -28,11 +28,11 @@
         <img class="header-page__logo-img" src="img/logo.svg#logotype" alt="Логотип" width="101" height="18">
       </a>
 
-      <nav class="nav-menu nav-menu--closed">
-        <button class="nav-menu__toggle" type="button">
+      <nav class="nav-menu nav-menu--nojs">
+        <button class="nav-menu__toggle" type="button" hidden>
           <span class="page__visually-hidden">Открыть меню</span>
         </button>
-        <ul class="nav-menu__list">
+        <ul class="nav-menu__list nav-menu__list--index">
           <li class="nav-menu__item">
             <a class="nav-menu__link" href="index.html">Главная</a>
           </li>
@@ -40,7 +40,7 @@
             <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link nav-menu__link--active" href="#">Подбор программы</a>
+            <a class="nav-menu__link" href="form.html" aria-current="page">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -173,22 +173,22 @@
       </a>
       <ul class="footer-page__social-list">
         <li class="footer-page__social-items">
-          <a class="footer-page__social-link footer-page__vk" href="#" title="Мы в вконтакте">
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="22">
+          <a class="footer-page__social-link" href="#" title="Мы в вконтакте">
+            <svg class="footer-page__vk" xmlns="http://www.w3.org/2000/svg" width="27" height="22">
               <use href="icons/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer-page__social-items">
-          <a class="footer-page__social-link footer-page__insta" href="#" title="Мы в инстаграм">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <a class="footer-page__social-link" href="#" title="Мы в инстаграм">
+            <svg class="footer-page__insta" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <use href="icons/sprite.svg#insta"></use>
             </svg>
           </a>
         </li>
         <li class="footer-page__social-items">
-          <a class="footer-page__social-link footer-page__face" href="#" title="Мы в фейсбуке">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+          <a class="footer-page__social-link" href="#" title="Мы в фейсбуке">
+            <svg class="footer-page__face" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
               <use href="icons/sprite.svg#facebook"></use>
             </svg>
           </a>
@@ -196,13 +196,17 @@
       </ul>
       <a class="footer-page__academy-link" href="https://htmlacademy.ru/intensive/adaptive"
         title="Ссылка на сайт HTML-академии">
-        HTML Academy
-        <svg class="logo-html" xmlns="http://www.w3.org/2000/svg" width="27" height="34">
+        <svg xmlns="http://www.w3.org/2000/svg" width="114" height="18">
+          <use href="icons/sprite.svg#academy"></use>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34">
           <use href="icons/sprite.svg#logo-html"></use>
         </svg>
       </a>
     </div>
   </footer>
+
+  <script src="js/app.min.js"></script>
 
 </body>
 
