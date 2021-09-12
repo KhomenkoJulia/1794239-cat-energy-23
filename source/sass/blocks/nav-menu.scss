@@ -36,7 +36,6 @@
   }
 }
 
-
 .nav-menu__toggle {
   border: none;
   padding: 0;
@@ -59,6 +58,8 @@
 }
 
 .nav-menu__list {
+  --text_color: var(--super_black);
+  --line-color: var(--green);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -73,14 +74,7 @@
     box-shadow:
       50vw 0 0 0 var(--white),
       -50vw 0 0 0 var(--white);
-  }
-}
 
-.nav-menu__list {
-  --text_color: var(--super_black);
-  --line-color: var(--green);
-
-  @media (max-width: 767px) {
     &::after {
       content: "";
       position: absolute;
