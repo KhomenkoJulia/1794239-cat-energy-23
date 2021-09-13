@@ -94,18 +94,18 @@
         <fieldset class="contact-info page__leveler">
           <p class="contact-info__line">
             <label for="mail-input">E-mail:*</label>
-            <input class="contact-info__input input" id="mail-input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+            <input class="contact-info__input contact-info__input--mail input" id="mail-input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
             <span class="contact-info__icon contact-info__icon--mail"></span>
           </p>
           <p class="contact-info__line">
             <label for="phone-input">Телефон:*</label>
-            <input class="contact-info__input input" id="phone-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <input class="contact-info__input contact-info__input--tel input" id="phone-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             <span class="contact-info__icon contact-info__icon--tel"></span>
           </p>
         </fieldset>
         <h3 class="application-form__head application-form__head--comment subtitle">Комментарий</h3>
         <p class="page__leveler">
-          <textarea class="contact-info__comment input" id="comment" name="message" rows=8 placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="application-form__comment input" id="comment" name="message" rows=8 placeholder="Расскажите обо всех повадках кота"></textarea>
         </p>
         <h3 class="application-form__head application-form__head--optional subtitle">Дополнительно</h3>
         <fieldset class="optional page__leveler">
@@ -153,8 +153,7 @@
         <picture>
           <source media="(min-width: 1220px)" srcset="img/location-desk.png 1x, img/location-desk@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/location-tab.png 1x, img/location-tabt@2x.png 2x">
-          <img class="contacts__map-img" src="img/location.png" srcset="img/location@2x.png" width="320" height="362"
-            alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+          <img class="contacts__map-img" src="img/location.png" srcset="img/location@2x.png" width="320" height="362" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </picture>
       </noscript>
       <iframe class="contacts__map" width="320" height="362"
@@ -174,14 +173,14 @@
       <ul class="footer-page__social-list">
         <li class="footer-page__social-items">
           <a class="footer-page__social-link" href="#" title="Мы в вконтакте">
-            <svg class="footer-page__vk" xmlns="http://www.w3.org/2000/svg" width="27" height="22">
+            <svg class="footer-page__vk" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
               <use href="icons/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer-page__social-items">
           <a class="footer-page__social-link" href="#" title="Мы в инстаграм">
-            <svg class="footer-page__insta" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <svg class="footer-page__insta" xmlns="http://www.w3.org/2000/svg" width="22" height="16">
               <use href="icons/sprite.svg#insta"></use>
             </svg>
           </a>

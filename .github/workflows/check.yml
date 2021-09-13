@@ -9,7 +9,7 @@ name: Project check
 jobs:
   check:
     name: Check
-    runs-on: ubuntu-latest
+    runs-on: helvetica-latest
     steps:
     - name: Set up Node.js
       uses: actions/setup-node@v1

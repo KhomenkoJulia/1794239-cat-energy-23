@@ -1,6 +1,6 @@
 .promo {
   box-sizing: border-box;
-  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -78,7 +78,8 @@
     padding-left: 82px;
     min-height: 450px;
     background: transparent url("../../img/index-can.png") no-repeat top 0 left 444px;
-    max-width: 1220px;
+    width: 1220px;
+    margin-inline: auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/index-can@2x.png") no-repeat;
@@ -88,7 +89,7 @@
 }
 
 .promo__title {
-  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -103,6 +104,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
+    max-width: 500px;
   }
 }
 
@@ -119,6 +121,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
+    max-width: 500px;
   }
 }
 

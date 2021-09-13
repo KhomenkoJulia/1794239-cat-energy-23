@@ -22,7 +22,7 @@
     background: url("../../img/promo-tab.jpg") no-repeat center;
     background-size: 100% auto;
     height: 200px;
-    margin-top: 64px;
+    margin-top: 66px;
     margin-bottom: 76px;
 
     @media (min-resolution: 2dppx) {
@@ -37,7 +37,7 @@
     width: 245px;
     height: 290px;
     box-sizing: border-box;
-    margin-top: 0;
+    margin-top: 54px;
     margin-bottom: 0;
 
     @media (min-resolution: 2dppx) {
@@ -59,7 +59,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    background: url("../../icons/sprite.svg#gift") no-repeat 13% 50%, var(--green_opacity);
+    background: url("../../icons/sprite.svg#gift") no-repeat 12.5% 50%, var(--green_opacity);
     background-size: 80px 83px;
     height: 200px;
     flex-direction: row;
@@ -89,7 +89,7 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     margin: 0;
-    margin-inline: 120px;
+    margin-inline: 126px;
   }
 
   @media (min-width: $desktop-width) {

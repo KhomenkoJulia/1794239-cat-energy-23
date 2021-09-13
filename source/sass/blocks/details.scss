@@ -3,7 +3,7 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 82px;
   }
 
@@ -60,7 +60,7 @@
       content: counter(myCounter);
       color: var(--light_grey);
       display: flex;
-      font-family: "Oswald", "Ubuntu", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
       line-height: 280px;
       position: absolute;

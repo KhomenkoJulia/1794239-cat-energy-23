@@ -27,7 +27,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 72px auto 76px 70px;
+    margin: 72px auto 72px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +91,7 @@
 }
 
 .other-products__name {
-  font-family: "Oswald", "Ubuntu", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
