@@ -67,8 +67,16 @@
   border: 1px solid var(--super_grey);
 }
 
-.intent__radio:checked + label::after,
 .intent__radio:focus-visible + label::after {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+.intent__radio:checked + label::after {
   content: "";
   position: absolute;
   left: -31px;
