@@ -166,13 +166,13 @@
     grid-template-columns: minmax(162px, auto) minmax(162px, auto) 1fr;
     grid-template-rows: 1fr;
     column-gap: 42px;
-    margin-bottom: 86px;
+    margin-bottom: 85px;
   }
 
   .example {
     border-top: 1px solid var(--grey);
-    padding-top: 12px;
-    background-image: linear-gradient(var(--white) 0%, var(--white) 56.5%, var(--light_grey) 44%, var(--light_grey) 100%);
+    padding-top: 15px;
+    background-image: linear-gradient(var(--white) 57.2%, var(--light_grey) 57.2%);
   }
 
   .example__title {

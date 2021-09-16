@@ -12,6 +12,7 @@
     column-gap: 79px;
     width: 1220px;
     margin-inline: auto;
+    padding-top: 28px;
     padding-bottom: 80px;
   }
 }
@@ -27,11 +28,12 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 68px auto 72px 70px;
+    margin: 66px auto 72px 70px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    margin-top: 0;
     margin-bottom: 74px;
   }
 }
@@ -68,10 +70,11 @@
   @media (min-width: $tablet-width) {
     border: 1px solid var(--grey);
     border-top: none;
-    padding: 26px 38px 27px;
+    padding: 26px 34px 25px;
     font-size: 16px;
     line-height: 20px;
     justify-content: space-between;
+    align-items: baseline;
     width: 100%;
   }
 
@@ -79,8 +82,7 @@
     flex-wrap: nowrap;
     border-left: none;
     border-right: none;
-    padding: 15px 0;
-    align-items: baseline;
+    padding: 0;
   }
 }
 
@@ -135,7 +137,7 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-left: 50px;
-    margin-bottom: 21px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,11 +152,17 @@
   width: 100%;
   flex: 1 0 280px 100%;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
+    margin: 13px 0 16px;
   }
 }
 
 .other-products__button {
   width: 100%;
+  align-items: center;
 }
