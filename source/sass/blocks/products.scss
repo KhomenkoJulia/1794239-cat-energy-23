@@ -80,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 10px;
+    line-height: 16px;
     grid-template-areas: initial;
     grid-template-rows: 200px min-content auto auto auto 1fr;
     background-image: linear-gradient(var(--white) 74px, var(--light_grey) 74px);
@@ -120,7 +120,7 @@
     justify-self: center;
     width: 150px;
     padding-top: 35px;
-    margin-bottom: 0;
+    margin-bottom: 18px;
     margin-left: 4px;
   }
 
@@ -131,6 +131,7 @@
     align-self: flex-start;
     text-align: center;
     margin-top: 7px;
+    margin-bottom: 22px;
   }
 }
 
@@ -142,15 +143,9 @@
 
   @media (min-width: $tablet-width) {
     margin-inline: 36px;
-    padding-top: 0;
-    padding-bottom: 8px;
     grid-area: initial;
     border-bottom: 1px solid var(--dark_grey);
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
   }
 }
 
@@ -166,8 +161,8 @@
 
   @media (min-width: $tablet-width) {
     margin-inline: 36px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     grid-area: initial;
     border-bottom: 1px solid var(--dark_grey);
   }
@@ -186,8 +181,8 @@
 
   @media (min-width: $tablet-width) {
     margin-inline: 36px;
-    padding-top: 11px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 6px;
     grid-area: initial;
     border-bottom: 1px solid var(--dark_grey);
   }
@@ -231,7 +226,7 @@
     order: 5;
     width: 250px;
     margin-inline: auto;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-bottom: 39px;
   }
 
